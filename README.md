@@ -4,6 +4,9 @@ Workbook for learning [servant](http://haskell-servant.readthedocs.io).
 
 # Development
 
+You'll need to install [Stack](https://docs.haskellstack.org/en/stable/README/)
+and [Docker](https://www.docker.com/products/overview#/install_the_platform).
+
 Build with
 
     make build
