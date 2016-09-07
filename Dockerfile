@@ -13,17 +13,18 @@ USER myuser
 
 RUN stack setup
 
-# Copy source
+# Install dependencies
 COPY LICENSE /opt/webapp/
 COPY Setup.hs /opt/webapp/
-COPY app /opt/webapp/app
 COPY learn-servant.cabal /opt/webapp/
-COPY src /opt/webapp/src
 COPY stack.yaml /opt/webapp/
-COPY test /opt/webapp/test
-
-# Install dependencies
 WORKDIR /opt/webapp
+RUN stack install --only-dependencies
+
+# Install source
+COPY app /opt/webapp/app
+COPY src /opt/webapp/src
+COPY test /opt/webapp/test
 RUN stack install
 
 # Run the app.  CMD is required to run on Heroku
