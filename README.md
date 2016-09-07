@@ -4,6 +4,9 @@ Workbook for learning [servant](http://haskell-servant.readthedocs.io).
 
 # Development
 
+You'll need to install [Stack](https://docs.haskellstack.org/en/stable/README/)
+and [Docker](https://www.docker.com/products/overview#/install_the_platform).
+
 Build with
 
     make build
@@ -28,3 +31,4 @@ Run the Docker image with
 ## TODO
 
 * Executable accepts port number as command-line argument.
+* Make build on Docker CI go much faster
