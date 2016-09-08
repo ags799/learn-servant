@@ -34,6 +34,6 @@ server :: Server API
 server = return users
 
 users :: [User]
-users = [ User 1 "Isaac" "Newton"
+users = [ User 1 "Mark" "Twain"
         , User 2 "Albert" "Einstein"
         ]
