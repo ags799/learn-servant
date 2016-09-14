@@ -3,4 +3,9 @@ sudo: required
 services:
   - docker
 
-script: docker pull ags799/learn-servant && make docker
+install:
+  - docker pull ags799/learn-servant
+  - docker save ags799/learn-servant $(docker history -q ags799/learn-servant) > image.tar
+  - docker load < image.tar
+
+script: make docker

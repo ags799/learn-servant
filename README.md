@@ -32,3 +32,4 @@ Run the Docker image with
 
 * Executable accepts port number as command-line argument.
 * Make build on Docker CI go much faster
+* Use variables in travis.yml for $IMAGE_NAME, link to Makefile
