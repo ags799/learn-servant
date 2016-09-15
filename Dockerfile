@@ -11,7 +11,7 @@ RUN mkdir -p /opt/webapp
 RUN chown -R myuser:myuser /opt/webapp
 USER myuser
 
-RUN stack setup
+RUN stack setup 7
 
 # Install dependencies
 COPY LICENSE /opt/webapp/
