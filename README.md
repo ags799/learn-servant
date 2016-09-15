@@ -31,4 +31,4 @@ Run the Docker image with
 ## TODO
 
 * Executable accepts port number as command-line argument.
-* Make build on Docker CI go much faster
+* Put Travis 'build|passing' symbol on README
