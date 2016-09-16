@@ -1,5 +1,8 @@
 # Learn Servant
 
+[![Build Status](https://travis-ci.org/ags799/learn-servant.svg?branch=master)]
+(https://travis-ci.org/ags799/learn-servant)
+
 Workbook for learning [servant](http://haskell-servant.readthedocs.io).
 
 # Development
