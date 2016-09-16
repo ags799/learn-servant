@@ -7,6 +7,9 @@ PORT := 8080
 build:
 	stack build
 
+style: build
+	hlint Setup.hs app src test
+
 run:
 	stack install && stack exec $(EXE_NAME)
 
@@ -22,4 +25,4 @@ publish: docker
 clean:
 	stack clean
 
-.PHONY: build run docker docker-run publish clean
+.PHONY: build style run docker docker-run publish clean
