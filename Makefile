@@ -25,4 +25,4 @@ publish: docker
 clean:
 	stack clean
 
-.PHONY: build run docker docker-run publish clean
+.PHONY: build style run docker docker-run publish clean

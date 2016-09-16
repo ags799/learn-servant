@@ -25,6 +25,8 @@ RUN stack install --only-dependencies
 COPY app /opt/webapp/app
 COPY src /opt/webapp/src
 COPY test /opt/webapp/test
+COPY Makefile /opt/webapp/Makefile
+RUN make style
 RUN stack install
 
 # Run the app.  CMD is required to run on Heroku
