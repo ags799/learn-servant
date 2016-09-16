@@ -18,6 +18,10 @@ Clean with
 
     make clean
 
+Check style with
+
+    make style
+
 Run with
 
     make run

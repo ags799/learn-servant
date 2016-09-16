@@ -7,6 +7,9 @@ PORT := 8080
 build:
 	stack build
 
+style:
+	hlint Setup.hs app src test
+
 run:
 	stack install && stack exec $(EXE_NAME)
 
