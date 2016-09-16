@@ -7,7 +7,7 @@ PORT := 8080
 build:
 	stack build
 
-style:
+style: build
 	hlint Setup.hs app src test
 
 run:
